@@ -1,0 +1,11 @@
+{
+  "name": "greenhouseapp",
+  "version": "1.0.0",
+  "description": "Parser",
+  "main": "scripts/parser.js",
+  "scripts": {
+    "start": "node scripts/parser.js"
+  },
+  "author": "Alice Chuang",
+  "license": "ISC"
+}

@@ -1,4 +1,6 @@
 // Javascript ES6
+// Uses Composition over Inheritance Approach
+
 const args = process.argv;
 let input = args[2] ||
   "Lead Chef, Chipotle, Denver, CO, 10, 15\n" +

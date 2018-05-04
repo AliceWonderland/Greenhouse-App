@@ -63,6 +63,7 @@ function sortInput(input){
 }
 
 function csvToArr(input){
+
     // accepts csv str, returns arr of csvs
     // convert str to arr, trim whitespace      => "Lead Chef, Chipotle, Denver, CO, 10, 15\n"
     // split into arr by \n                     => [ "Lead Chef, Chipotle, Denver, CO, 10, 15"]
@@ -70,18 +71,22 @@ function csvToArr(input){
     // trim whitespace from each ele in sub-arr => [ 'Lead Chef', 'Chipotle', 'Denver', 'CO', '10', '15' ]
 
     return input.split('\n').map(ele => ele.split(',').map(ele => ele.trim()));
+
 }
 
 function jsonToArr(input){
+
     // accepts json str, returns arr of json    => "{name: 'Dog Walker', ... pay: {"min": 10, "max": 15}}"
     // trim whitespace
     // split into arr by \n                     => ["{name: 'Dog Walker', ... pay: {"min": 10, "max": 15}}", ...]
     // convert json str to json obj             =>[{"name": 'Dog Walker', ... "pay": {"min": 10, "max": 15}}]
 
     return input.trim().split('\n').map(ele => JSON.parse(ele));
+
 }
 
 function convertToCsv(input){
+
     //accepts arr of json, return arr of csv
 
     let result = [];
@@ -237,6 +242,3 @@ let json = [
 
 // console.log(parseInput(input));
 console.log(parseInput(alternate));
-
-// console.log(cleanInput(alternate));
-// console.log(convertToCsv(json));

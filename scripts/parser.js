@@ -21,6 +21,7 @@ function parseInput(input){
         list = convertToObj(list);
 
     return result + convertToFinal(list);
+
 }
 
 function cleanInput(input){
@@ -32,6 +33,7 @@ function cleanInput(input){
     // accepts a str, returns arr
 
     return input.split('\n').map(ele => ele.split(',').map(ele => ele.trim()));
+
 }
 
 function sortInput(input){
@@ -41,6 +43,7 @@ function sortInput(input){
     // accepts an arr, returns arr
 
     return input.sort((a,b) => a[0] > b[0]);
+
 }
 
 function convertToObj(input){
@@ -57,6 +60,7 @@ function convertToObj(input){
         obj['Pay'] = `${ ele[4] }-${ ele[5] }`;
         return obj;
     });
+
 }
 
 function convertToFinal(list){
@@ -71,6 +75,7 @@ function convertToFinal(list){
         result += '\n';
     }
     return result;
+
 }
 
 function checkInput(input){
@@ -79,7 +84,7 @@ function checkInput(input){
     // accepts str, returns bool
 
     // basic check for undefined, empty str, \n exists, comma exists
-    if(!input || !input.length || input.indexOf('\n') < 0 || input.indexOf(',') < 0 ){
+    if(!input || !input.length || input.indexOf('\n') < 0 || input.indexOf(',') < 0){
         return false;
     }
 
@@ -104,6 +109,7 @@ function checkInput(input){
     }
 
     return true;
+
 }
 
 // let test=",,,,,\n" + "Lead Chef, Chipotle, Denver, CO, 10, 15\n" + "Stunt Double, Equity, Los Angeles, CA, 15, 25\n";

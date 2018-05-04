@@ -110,19 +110,19 @@ function checkInput(input){
 }
 
 const getInput = (state) => ({
-    input: () => state.input
+    printInput: () => state.input
 });
 
 const getArr = (state) => ({
-    arrs: () => state.arrs
+    toArrs: () => state.arrs
 });
 
 const getObj = (state) => ({
-    objs: () => state.objs
+    toObjs: () => state.objs
 });
 
 const getResult = (state) => ({
-    result: () => state.result
+    toResult: () => state.result
 });
 
 const Parser = (input) => {
@@ -148,7 +148,7 @@ const Parser = (input) => {
 };
 
 const myParser = Parser(input);
-console.log(myParser.input());
-console.log(myParser.arrs());
-console.log(myParser.objs());
-console.log(myParser.result());
+console.log(myParser.printInput());
+console.log(myParser.toArrs());
+console.log(myParser.toObjs());
+console.log(myParser.toResult());

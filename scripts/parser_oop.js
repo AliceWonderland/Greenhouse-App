@@ -114,15 +114,15 @@ const getInput = (state) => ({
 });
 
 const getArr = (state) => ({
-    toArrs: () => state.arrs
+    printArrs: () => state.arrs
 });
 
 const getObj = (state) => ({
-    toObjs: () => state.objs
+    printObjs: () => state.objs
 });
 
 const getResult = (state) => ({
-    toResult: () => state.result
+    printResult: () => state.result
 });
 
 const Parser = (input) => {
@@ -149,6 +149,6 @@ const Parser = (input) => {
 
 const myParser = Parser(input);
 console.log(myParser.printInput());
-console.log(myParser.toArrs());
-console.log(myParser.toObjs());
-console.log(myParser.toResult());
+console.log(myParser.printArrs());
+console.log(myParser.printObjs());
+console.log(myParser.printResult());

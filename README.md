@@ -60,3 +60,6 @@ Convert to Formatted Output
 ### Resources
 http://tryruby.org/
 Brush up on string methods and regex
+
+Composition over Inheritance
+https://medium.com/humans-create-software/composition-over-inheritance-cb6f88070205

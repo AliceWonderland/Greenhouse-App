@@ -25,6 +25,17 @@ Title: Manager of Fun, Organization: IBM, Location: Albany, NY, Pay: 30-40
 Title: Stunt Double, Organization: Equity, Location: Los Angeles, CA, Pay: 15-25
 ```
 
+### How It Works
+* Convert string to array of arrays
+* Convert array of arrays to array of objects
+* Convert array of objects into formatted string output
+
+Check for correct input format
+Convert to Arrays
+Sort Arrays
+Convert to Objects
+Convert to Formatted Output
+
 ### Setup + Installation
 #### Node
 * Check if you have Node installed. `node -v`
@@ -48,3 +59,4 @@ Title: Stunt Double, Organization: Equity, Location: Los Angeles, CA, Pay: 15-25
 
 ### Resources
 http://tryruby.org/
+Brush up on string methods and regex

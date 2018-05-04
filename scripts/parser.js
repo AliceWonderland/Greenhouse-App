@@ -1,12 +1,12 @@
 // Javascript ES6
 const args = process.argv;
 let input = args[2] ||
-    "Lead Chef, Chipotle, Denver, CO, 10, 15\n" +
-    "Stunt Double, Equity, Los Angeles, CA, 15, 25\n" +
-    "Manager of Fun, IBM, Albany, NY, 30, 40\n" +
-    "Associate Tattoo Artist, Tit 4 Tat, Brooklyn, NY, 250, 275\n" +
-    "Assistant to the Regional Manager, IBM, Scranton, PA, 10, 15\n" +
-    "Lead Guitarist, Philharmonic, Woodstock, NY, 100, 200";
+  "Lead Chef, Chipotle, Denver, CO, 10, 15\n" +
+  "Stunt Double, Equity, Los Angeles, CA, 15, 25\n" +
+  "Manager of Fun, IBM, Albany, NY, 30, 40\n" +
+  "Associate Tattoo Artist, Tit 4 Tat, Brooklyn, NY, 250, 275\n" +
+  "Assistant to the Regional Manager, IBM, Scranton, PA, 10, 15\n" +
+  "Lead Guitarist, Philharmonic, Woodstock, NY, 100, 200";
 
 function parseInput(input){
 
@@ -17,8 +17,8 @@ function parseInput(input){
 
     let result = 'All Opportunities\n';
     let list = cleanInput(input);
-        list = sortInput(list);
-        list = convertToObj(list);
+    list = sortInput(list);
+    list = convertToObj(list);
 
     return result + convertToFinal(list);
 
